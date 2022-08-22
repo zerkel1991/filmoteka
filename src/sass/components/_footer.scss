@@ -19,14 +19,18 @@
 }
 
 .footer_icon {
-  fill: #ff6b08;
+  fill: $blackColor;
   margin: 0 10px;
   animation: heartAnimation 1s ease infinite;
 }
 
 .footer__link {
   cursor: pointer;
-  text-decoration: underline;
+  color: $blackColor;
+}
+
+.footer__link:hover,.footer__link:focus {
+  color:$accentColor
 }
 
 @keyframes heartAnimation {
@@ -54,3 +58,4 @@
     transform: scale(1.25);
   }
 }
+
