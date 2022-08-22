@@ -1633,7 +1633,7 @@ select:-webkit-autofill:focus {
   }
 }
 .footer_icon {
-  fill: #ff6b08;
+  fill: #000000;
   margin: 0 10px;
   -webkit-animation: heartAnimation 1s ease infinite;
           animation: heartAnimation 1s ease infinite;
@@ -1641,7 +1641,11 @@ select:-webkit-autofill:focus {
 
 .footer__link {
   cursor: pointer;
-  text-decoration: underline;
+  color: #000000;
+}
+
+.footer__link:hover, .footer__link:focus {
+  color: #ff6b08;
 }
 
 @-webkit-keyframes heartAnimation {
@@ -1848,4 +1852,4 @@ select:-webkit-autofill:focus {
   }
 }
 
-/*# sourceMappingURL=/filmoteka/src.476f5411.css.map */
+/*# sourceMappingURL=/filmoteka/src.f06adb3c.css.map */

@@ -10152,4 +10152,4 @@ require("./scripts/infiniteScroll");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 },{"./sass/main.scss":"clu1","./scripts/services/API":"XqD0","./scripts/renderMainPage":"q8Z5","./scripts/scroll-to-top":"Hibt","./scripts/header":"BSv9","./scripts/pagination":"fZBP","./scripts/spinner":"nmpS","./scripts/dark-theme":"HzNH","./scripts/sortingBtns":"t8kM","./scripts/infiniteScroll":"wbTd"}]},{},["Focm"], null)
-//# sourceMappingURL=/filmoteka/src.840ee4dd.js.map
+//# sourceMappingURL=/filmoteka/src.a676005c.js.map
