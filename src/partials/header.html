@@ -1,135 +1,74 @@
 <header class="header">
-  <div class="container">
-    <div class="logo-bg">
-      <div theme="dark">
-        <div>
-          <input type="checkbox" id="theme-toggle" class="switch" />
-          <label for="theme-toggle"></label>
-        </div>
-      </div>
-      <a href="index.html">
-        <svg class="logo" width="70" height="30">
-          <use href="./images/sprite.svg#icon-logo"></use>
+  <div class="container header-container">
+    <div class="header-box">
+      <a class="header-box__link" href="">
+        <svg class="header-box__icon" width="24" height="24">
+          <use href="/images/svg/icons.svg#film"></use>
         </svg>
+        <h1 class="header-box__title">Filmoteka</h1>
       </a>
+      <ul class="header-list">
+        <li class="header-list__item">
+          <a class="header-list__link header-list__link--current" href="/index.html">HOME</a>
+        </li>
+        <li class="header-list__item">
+          <a class="header-list__link library-link" href="#">MY LIBRARY</a>
+        </li>
+      </ul>
     </div>
-
-    <h1 class="header__title text-focus-in">
-      FIND BEST EVENTS AROUND THE WORLD
-    </h1>
-
-    <div class="input-container">
-      <div class="search__container">
-        <form class="js-serch-query">
-          <input
-            name="serchQuery"
-            class="search-input input"
-            type="text"
-            placeholder="Start searching"
-          />
-          <button type="submit" class="search-input__button">
-            <svg class="search-input__icon" width="15" height="20">
-              <use href="./images/sprite.svg#icon-input-loop"></use>
-            </svg>
-          </button>
-        </form>
-      </div>
-      <div class="select-container">
-        <div class="select-box">
-          <div class="options-container">
-            <div class="option">
-              <input type="radio" class="radio" name="category" />
-              <label id="" for="">Choose country</label>
-            </div>
-            <div class="option">
-              <input type="radio" class="radio" name="category" />
-              <label id="US" for="US">United States Of America</label>
-            </div>
-            <div class="option">
-              <input type="radio" class="radio" name="category" />
-              <label id="AU" for="AU">Australia</label>
-            </div>
-            <div class="option">
-              <input type="radio" class="radio" name="category" />
-              <label id="AT" for="AT">Austria</label>
-            </div>
-            <div class="option">
-              <input type="radio" class="radio" name="category" />
-              <label id="BE" for="BE">Belgium</label>
-            </div>
-            <div class="option">
-              <input type="radio" class="radio" name="category" />
-              <label id="CA" for="CA">Canada</label>
-            </div>
-            <div class="option">
-              <input type="radio" class="radio" name="category" />
-              <label id="CZ" for="CA">Czech Republic</label>
-            </div>
-            <div class="option">
-              <input type="radio" class="radio" name="category" />
-              <label id="DK" for="US">Denmark</label>
-            </div>
-            <div class="option">
-              <input type="radio" class="radio" name="category" />
-              <label id="EE" for="AU">Estonia</label>
-            </div>
-            <div class="option">
-              <input type="radio" class="radio" name="category" />
-              <label id="FI" for="US">Finland</label>
-            </div>
-            <div class="option">
-              <input type="radio" class="radio" name="category" />
-              <label id="DE" for="DE">Germany</label>
-            </div>
-            <div class="option">
-              <input type="radio" class="radio" name="category" />
-              <label id="GB" for="AU">Great Britain</label>
-            </div>
-            <div class="option">
-              <input type="radio" class="radio" name="category" />
-              <label id="IE" for="GB">Ireland</label>
-            </div>
-            <div class="option">
-              <input type="radio" class="radio" name="category" />
-              <label id="PL" for="US">Poland</label>
-            </div>
-            <div class="option">
-              <input type="radio" class="radio" name="category" />
-              <label id="LU" for="LT">Luxembourg</label>
-            </div>
-            <div class="option">
-              <input type="radio" class="radio" name="category" />
-              <label id="MX" for="LT">Mexico</label>
-            </div>
-            <div class="option">
-              <input type="radio" class="radio" name="category" />
-              <label id="NL" for="LT">Netherlands</label>
-            </div>
-            <div class="option">
-              <input type="radio" class="radio" name="category" />
-              <label id="NZ" for="LT">New Zealand</label>
-
-            </div>
-            <div class="option">
-              <input type="radio" class="radio" name="category" />
-              <label id="NO" for="LT">Norway</label>
-            </div>
-            <div class="option">
-              <input type="radio" class="radio" name="category" />
-              <label id="ES" for="LT">Spain</label>
-            </div>
-            <div class="option">
-              <input type="radio" class="radio" name="category" />
-              <label id="SE" for="LT">Sweden</label>
-            </div>
-            <div class="option">
-              <input type="radio" class="radio" name="category" />
-              <label id="CH" for="LT">Switzerland</label>
-            </div>
-          </div>
-          <div class="selected">Choose country</div>
-        </div>
-      </div>
-    </div>
+    <form class="header-form">
+      <label class="header-form__label">
+        <input
+          class="header-form__input"
+          type="text"
+          placeholder="Search movie"
+          name="headerInput"
+        />
+        <button class="header-form__btn" type="submit">
+          <svg class="header-form__icon" width="12" height="12">
+            <use href="/images/svg/icons.svg#search"></use>
+          </svg>
+        </button>
+      </label>
+    </form>
+    <form class="genres-form">
+      <select class="genres-form__select" name="genre" id="genre">
+        <option class="genres-form__option" value="">Choose your genre</option>
+        <option class="genres-form__option" value="28">Action</option>
+        <option class="genres-form__option" value="12">Adventure</option>
+        <option class="genres-form__option" value="16">Animation</option>
+        <option class="genres-form__option" value="35">Comedy</option>
+        <option class="genres-form__option" value="80">Crime</option>
+        <option class="genres-form__option" value="99">Documentary</option>
+        <option class="genres-form__option" value="18">Drama</option>
+        <option class="genres-form__option" value="10751">Family</option>
+        <option class="genres-form__option" value="14">Fantasy</option>
+        <option class="genres-form__option" value="36">History</option>
+        <option class="genres-form__option" value="27">Horror</option>
+        <option class="genres-form__option" value="10402">Music</option>
+        <option class="genres-form__option" value="9648">Mystery</option>
+        <option class="genres-form__option" value="10749">Romance</option>
+        <option class="genres-form__option" value="878">Science Fiction</option>
+        <option class="genres-form__option" value="10770">TV Movie</option>
+        <option class="genres-form__option" value="53">Thriller</option>
+        <option class="genres-form__option" value="10752">War</option>
+        <option class="genres-form__option" value="37">Western</option>
+      </select>
+    </form>
+    <label class="header-form__switch">
+      <input class="header-form__checkbox" type="checkbox" />
+      <span class="header-form__slider header-form__slider--round">
+        <p class="header-slider__box">
+          <svg class="header-slider__icon" width="19" height="19">
+            <use href="./images/svg/icons.svg#icon-sun-1"></use>
+          </svg>
+        </p>
+        <p class="header-slider__box">
+          <svg class="header-slider__icon" width="18" height="18">
+            <use href="./images/svg/icons.svg#icon-moon-1"></use>
+          </svg>
+        </p>
+      </span>
+    </label>
   </div>
 </header>
