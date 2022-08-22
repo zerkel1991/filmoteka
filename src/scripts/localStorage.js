@@ -35,7 +35,7 @@ export function checkedWatchedMovie(title) {
 // 5 remove movie
 export function removeWatchedMovie(title) {
   if (checkedWatchedMovie(title)) {
-    delete watchedMovies.[title];
+    delete watchedMovies[title];
       }
 
   localStorage.setItem('watched-movies', JSON.stringify(watchedMovies));
@@ -80,7 +80,7 @@ export function checkedQueueMovie(title) {
 // 5 remove movie
 export function removeQueueMovie(title) {
   if (checkedQueueMovie(title)) {
-    delete queueMovies.[title];
+    delete queueMovies[title];
 
   }
 
