@@ -34,7 +34,6 @@
     "notiflix": "^3.2.5",
     "pagination": "^0.4.6",
     "postcss": "^8.4.16",
-    "simplelightbox": "^2.10.3",
     "tui-pagination": "^3.4.1"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
